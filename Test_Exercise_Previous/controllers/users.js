@@ -24,7 +24,7 @@ const users = [
 // let users;
 
 export const createUser = (req, res) => {
-   const { firstName, lastaName, age } = req.body;
+   const { firstName, lastName, age } = req.body;
    const user = req.body;
 
    users.push({ ...user, id: uuidv4() });
