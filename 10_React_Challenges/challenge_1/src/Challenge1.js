@@ -11,43 +11,45 @@ const user = {
 
 function Challenge1() {
    return (
-      <div>
-         <a href="localhost:3000">
-            <h2>{user.name}</h2>
-         </a>
+      <div className="App">
+         <div className="user-deets">
+            <a href="localhost:3000">
+               <h2>{user.name}</h2>
+            </a>
 
-         <img src={user.avatar} alt={user.name} width="300"></img>
-         <hr />
-         <p>
-            <strong>User Name</strong>
-            <br />
-            {user.name}
-         </p>
-         <p>
-            <strong>location</strong>
-            <br />
-            {user.location}
-         </p>
-         <p>
-            <strong>foodType</strong>
-            <br />
-            {user.foodType}
-         </p>
-         <p>
-            <strong>age</strong>
-            <br />
-            {user.age}
-         </p>
-         <p>
-            <strong>likes</strong>
-            <br />
-            {user.likes}
-         </p>
-         <p>
-            <strong>twitterUsername</strong>
-            <br />
-            {user.twitterUsername}
-         </p>
+            <img src={user.avatar} alt={user.name} width="300"></img>
+            <hr />
+            <p>
+               <strong>User Name</strong>
+               <br />
+               {user.name}
+            </p>
+            <p>
+               <strong>location</strong>
+               <br />
+               {user.location}
+            </p>
+            <p>
+               <strong>foodType</strong>
+               <br />
+               {user.foodType}
+            </p>
+            <p>
+               <strong>age</strong>
+               <br />
+               {user.age}
+            </p>
+            <p>
+               <strong>likes</strong>
+               <br />
+               {user.likes}
+            </p>
+            <p>
+               <strong>twitterUsername</strong>
+               <br />
+               {user.twitterUsername}
+            </p>
+         </div>
       </div>
    );
 }
